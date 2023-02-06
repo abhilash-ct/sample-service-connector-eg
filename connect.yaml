@@ -1,0 +1,10 @@
+deployAs:
+  - name: service
+    applicationType: service
+    endpoint: /service
+    configurationType:
+      PROJECT_KEY: secret
+      CLIENT_ID: secret
+      CLIENT_SECRET: secret
+      SCOPE: secret
+      REGION : standard
