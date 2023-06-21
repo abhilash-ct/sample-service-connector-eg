@@ -2,9 +2,15 @@ deployAs:
   - name: service
     applicationType: service
     endpoint: /service
-    configurationType:
-      PROJECT_KEY: secret
-      CLIENT_ID: secret
-      CLIENT_SECRET: secret
-      SCOPE: secret
-      REGION : standard
+    configuration:
+      securedConfiguration:
+        - key: CTP_PROJECT_KEY
+          description: project key from commercetools composable commerce project
+        - key: CTP_REGION
+          description: region of commercetools composable commerce project
+        - key: CTP_CLIENT_ID
+          description: client id from commercetools composable commerce project
+        - key: CTP_CLIENT_SECRET
+          description: client secret from commercetools composable commerce project
+        - key: CTP_SCOPE
+          description: scope from commercetools composable commerce project
